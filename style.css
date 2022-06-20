@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+.maincontainer{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/560/931/non_2x/sunny-weather-blue-sky-and-white-clouds-clouds-against-blue-sky-background-free-photo.JPG);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 80vh;
+    width: 30%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.container h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: aliceblue;
+}
+.weather-search{
+    margin-top: -70px;
+}
+form{
+    height: 300px;
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    width: 80%;
+    height: 50px;
+    padding: 0px;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid white;
+    margin-right: 40px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+button{
+    color: aliceblue;
+    width: 80%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-size: 25px;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-right: 40px;
+}
+.weather-data{
+    text-align: center;
+    margin-top: -50px;
+}
+.weather-data h1{
+    font-size: 100px;
+    margin-top: 0px;
+}
+
+.weather-data h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+p{
+    text-transform: uppercase;
+}
+
+img{
+    margin: 15px;
+    height: 65px;
+    margin-top: 0px;
+}
+
+
+
+
+@media only screen and (max-width:1000px){
+
+    .container{
+        width: 55%;
+    }
+} 
+
+@media only screen and (max-width:600px){
+
+
+    .container{
+        width: 90%;
+    }
+
+}
