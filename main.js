@@ -11,7 +11,7 @@ form.addEventListener("submit", searchData)
 async function searchData(e){
     e.preventDefault()
 
-    let res = await fetch(`http://api.weatherstack.com/current?access_key=eac5c3fe230ad6fa084b651cba508f34&query=${input.value}`)
+    let res = await fetch(`http://api.weatherstack.com/current?access_key=38a4077b0d057c027127ce6d3598a87f&query=${input.value}`)
     let data = await res.json()
     
     if (data.success === false){
@@ -41,9 +41,8 @@ async function searchData(e){
         }
 
 
-
     
-     
+        // http://api.weatherstack.com/current?access_key=eac5c3fe230ad6fa084b651cba508f34&query=${input.value}
 
     }
     console.log(data)
